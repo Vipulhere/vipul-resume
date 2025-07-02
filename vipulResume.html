@@ -1,0 +1,1012 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipul Kumar - Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0.4in;
+        }
+        
+        @media print {
+            body { 
+                margin: 0; 
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print { display: none; }
+            .section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f8f9fa;
+            font-size: 11px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 0.8rem 1rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.1rem;
+            letter-spacing: 1px;
+        }
+        
+        .header .title {
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin-bottom: 0.4rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            font-size: 0.7rem;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .content {
+            padding: 0.8rem 1rem;
+        }
+        
+        .section {
+            margin-bottom: 0.8rem;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.4rem;
+            padding-bottom: 0.1rem;
+            border-bottom: 2px solid #3498db;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .about-text {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            text-align: justify;
+            color: #555;
+        }
+        
+        .job {
+            margin-bottom: 0.6rem;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.3rem;
+        }
+        
+        .company {
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: #2c3e50;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: #3498db;
+            font-size: 0.7rem;
+        }
+        
+        .duration {
+            font-style: italic;
+            color: #666;
+            font-size: 0.7rem;
+        }
+        
+        .job-responsibilities {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-responsibilities li {
+            position: relative;
+            padding-left: 0.7rem;
+            margin-bottom: 0.2rem;
+            color: #555;
+            line-height: 1.3;
+            font-size: 0.75rem;
+        }
+        
+        .job-responsibilities li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.3rem;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 0.4rem;
+            border-radius: 4px;
+            border-left: 3px solid #3498db;
+        }
+        
+        .skill-category h4 {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.2rem;
+            font-size: 0.7rem;
+        }
+        
+        .skill-list {
+            color: #555;
+            font-size: 0.65rem;
+            line-height: 1.2;
+        }
+        
+        .education-item {
+            background: #f8f9fa;
+            padding: 0.6rem;
+            border-radius: 4px;
+            border-left: 3px solid #3498db;
+            margin-bottom: 0.6rem;
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.3rem;
+        }
+        
+        .university {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 0.75rem;
+        }
+        
+        .degree {
+            color: #3498db;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+        
+        .gpa {
+            font-weight: 600;
+            color: #27ae60;
+            font-size: 0.7rem;
+        }
+        
+        .education-details {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .education-details li {
+            position: relative;
+            padding-left: 0.7rem;
+            margin-bottom: 0.1rem;
+            color: #555;
+            font-size: 0.65rem;
+        }
+        
+        .education-details li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .awards-section {
+            margin-bottom: 0.6rem;
+        }
+        
+        .award-item {
+            background: #f8f9fa;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border-left: 3px solid #f39c12;
+            margin-bottom: 0.4rem;
+        }
+        
+        .award-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.4rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .award-icon {
+            font-size: 1rem;
+            margin-top: 0.1rem;
+        }
+        
+        .award-title {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 0.75rem;
+        }
+        
+        .award-company {
+            font-style: italic;
+            color: #666;
+            font-size: 0.65rem;
+            margin-top: 0.1rem;
+        }
+        
+        .award-description {
+            color: #555;
+            font-size: 0.65rem;
+            line-height: 1.3;
+        }
+        
+        .certifications-section {
+            margin-top: 0.6rem;
+        }
+        
+        .sub-section-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.4rem;
+            padding-bottom: 0.1rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .certifications-list {
+            list-style: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.3rem;
+        }
+        
+        .certifications-list li {
+            position: relative;
+            padding: 0.4rem;
+            margin-bottom: 0;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border-left: 3px solid #27ae60;
+        }
+        
+        .cert-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.7rem;
+        }
+        
+        .cert-provider {
+            font-style: italic;
+            color: #666;
+            font-size: 0.65rem;
+            margin: 0.1rem 0;
+        }
+        
+        .cert-description {
+            color: #555;
+            font-size: 0.6rem;
+            line-height: 1.2;
+            margin-top: 0.1rem;
+        }
+        
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .print-btn:hover {
+            background: #2980b9;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .certifications-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">Print/Save as PDF</button>
+    
+    <div class="header">
+        <h1>VIPUL KUMAR</h1>
+        <div class="title">SQA Engineer</div>
+        <div class="contact-info">
+            <span>📍 Vaishali, Bihar, India</span>
+            <span>📞 +91 7876789537</span>
+            <span>✉️ krvipul28@gmail.com</span>
+            <span>💼 <a href="https://www.linkedin.com/in/vipul-kumar-8779292a2/">LinkedIn</a></span>
+            <span>🔗 <a href="https://github.com/Vipulhere/">GitHub</a></span>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="section">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                Hybrid QA Engineer with hands-on experience in both manual and automation testing. Skilled in identifying critical bugs across APIs, dashboards, frontend web, mobile apps, and design systems. Proficient with TestNG-based frameworks, API automation, frontend automation for desktop, mobile web, native apps, and visual UI validation. Known for detail-oriented approach and strong ownership in end-to-end quality assurance.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="company">TIKET.COM</div>
+                        <div class="job-title">SQA Engineer</div>
+                    </div>
+                    <div class="duration">Oct 2023 – Present</div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Performed end-to-end manual and automation testing across desktop web, mobile web (mWeb), and native mobile apps</li>
+                    <li>Automated test cases for APIs, frontend components, and regression suites using Java, TestNG, Selenium, and Appium</li>
+                    <li>Validated REST APIs using Postman and REST Assured, including status codes, response schema, and business logic</li>
+                    <li>Implemented visual UI automation to detect layout and content differences across builds</li>
+                    <li>Used tools like Charles Proxy and DevTools for network and console debugging in complex scenarios</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Technical</h4>
+                    <div class="skill-list">Java, SQL, Python, HTML, CSS, JavaScript, Git, Maven, JSON, XPath</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Automation Testing</h4>
+                    <div class="skill-list">Selenium, TestNG, Appium, REST Assured, Postman, Visual Automation, Jenkins</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Manual Testing</h4>
+                    <div class="skill-list">API, UI, Mobile Apps, Cross-browser, Kafka, Kibana, Design System Validation, Regression, Smoke/Sanity</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Utilities</h4>
+                    <div class="skill-list">Charles Proxy, BrowserStack, LambdaTest, DevTools, IntelliJ, Android Studio, Xcode, VS Code, Studio3T, Dbeaver</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Test Management</h4>
+                    <div class="skill-list">JIRA, TestRail, Agile/Scrum Methodologies</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <div class="skill-list">Problem-Solving, Attention to Detail, Communication, Collaboration, Time Management</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Awards & Achievements</h2>
+            <div class="awards-section">
+                <div class="award-item">
+                    <div class="award-header">
+                        <span class="award-icon">🎖️</span>
+                        <div class="award-details">
+                            <div class="award-title">QA Rockstar Award</div>
+                            <div class="award-company">tiket.com – Q1 2024 & Q4 2024</div>
+                        </div>
+                    </div>
+                    <div class="award-description">
+                        Recognized twice for outstanding performance in delivering high-quality software products. Awarded by the leadership team for exemplary contributions in the QA team.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications-section">
+                <h3 class="sub-section-title">📜 Certifications</h3>
+                <ul class="certifications-list">
+                    <li>
+                        <div class="cert-title">Core Java Bootcamp</div>
+                        <div class="cert-provider">Udemy (Jun 2025)</div>
+                        <div class="cert-description">Completed an intensive Java course covering Java 17, object-oriented programming, and backend development fundamentals.</div>
+                    </li>
+                    <li>
+                        <div class="cert-title">Software Engineer Certification</div>
+                        <div class="cert-provider">HackerRank (Dec 2024)</div>
+                        <div class="cert-description">Verified proficiency in Java, SQL, and JavaScript through hands-on coding assessments.</div>
+                    </li>
+                    <li>
+                        <div class="cert-title">JavaScript (Intermediate)</div>
+                        <div class="cert-provider">HackerRank</div>
+                    </li>
+                    <li>
+                        <div class="cert-title">SQL (Advanced)</div>
+                        <div class="cert-provider">HackerRank</div>
+                    </li>
+                    <li>
+                        <div class="cert-title">Software Engineer Intern</div>
+                        <div class="cert-provider">HackerRank</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <div class="university">CHITKARA UNIVERSITY</div>
+                        <div class="degree">B.E in Computer Science</div>
+                    </div>
+                    <div>
+                        <div class="gpa">CGPA: 9.80/10</div>
+                        <div class="duration">2024</div>
+                    </div>
+                </div>
+                <ul class="education-details">
+                    <li>Built multiple projects using C++, Java, and MERN stack</li>
+                    <li>Participated in coding contests, strengthening problem-solving skills</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipul Kumar - Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0.4in;
+        }
+        
+        @media print {
+            body { 
+                margin: 0; 
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print { display: none; }
+            .section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #fff;
+            font-size: 11px;
+        }
+        
+        .header {
+            background: #333;
+            color: white;
+            padding: 0.8rem 1rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.1rem;
+            letter-spacing: 1px;
+        }
+        
+        .header .title {
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin-bottom: 0.4rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            font-size: 0.7rem;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .content {
+            padding: 0.8rem 1rem;
+        }
+        
+        .section {
+            margin-bottom: 0.8rem;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.4rem;
+            padding-bottom: 0.1rem;
+            border-bottom: 2px solid #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .about-text {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            text-align: justify;
+            color: #555;
+        }
+        
+        .job {
+            margin-bottom: 0.6rem;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.3rem;
+        }
+        
+        .company {
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: #333;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.7rem;
+        }
+        
+        .duration {
+            font-style: italic;
+            color: #666;
+            font-size: 0.7rem;
+        }
+        
+        .job-responsibilities {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-responsibilities li {
+            position: relative;
+            padding-left: 0.7rem;
+            margin-bottom: 0.2rem;
+            color: #555;
+            line-height: 1.3;
+            font-size: 0.75rem;
+        }
+        
+        .job-responsibilities li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.3rem;
+        }
+        
+        .skill-category {
+            background: #f5f5f5;
+            padding: 0.4rem;
+            border-radius: 4px;
+            border-left: 3px solid #666;
+        }
+        
+        .skill-category h4 {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.2rem;
+            font-size: 0.7rem;
+        }
+        
+        .skill-list {
+            color: #555;
+            font-size: 0.65rem;
+            line-height: 1.2;
+        }
+        
+        .education-item {
+            background: #f5f5f5;
+            padding: 0.6rem;
+            border-radius: 4px;
+            border-left: 3px solid #666;
+            margin-bottom: 0.6rem;
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.3rem;
+        }
+        
+        .university {
+            font-weight: 700;
+            color: #333;
+            font-size: 0.75rem;
+        }
+        
+        .degree {
+            color: #666;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+        
+        .gpa {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.7rem;
+        }
+        
+        .education-details {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .education-details li {
+            position: relative;
+            padding-left: 0.7rem;
+            margin-bottom: 0.1rem;
+            color: #555;
+            font-size: 0.65rem;
+        }
+        
+        .education-details li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .awards-section {
+            margin-bottom: 0.6rem;
+        }
+        
+        .award-item {
+            background: #f5f5f5;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border-left: 3px solid #999;
+            margin-bottom: 0.4rem;
+        }
+        
+        .award-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.4rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .award-icon {
+            font-size: 1rem;
+            margin-top: 0.1rem;
+        }
+        
+        .award-title {
+            font-weight: 700;
+            color: #333;
+            font-size: 0.75rem;
+        }
+        
+        .award-company {
+            font-style: italic;
+            color: #666;
+            font-size: 0.65rem;
+            margin-top: 0.1rem;
+        }
+        
+        .award-description {
+            color: #555;
+            font-size: 0.65rem;
+            line-height: 1.3;
+        }
+        
+        .certifications-section {
+            margin-top: 0.6rem;
+        }
+        
+        .sub-section-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.4rem;
+            padding-bottom: 0.1rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .certifications-list {
+            list-style: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.3rem;
+        }
+        
+        .certifications-list li {
+            position: relative;
+            padding: 0.4rem;
+            margin-bottom: 0;
+            background: #f5f5f5;
+            border-radius: 4px;
+            border-left: 3px solid #777;
+        }
+        
+        .cert-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.7rem;
+        }
+        
+        .cert-provider {
+            font-style: italic;
+            color: #666;
+            font-size: 0.65rem;
+            margin: 0.1rem 0;
+        }
+        
+        .cert-description {
+            color: #555;
+            font-size: 0.6rem;
+            line-height: 1.2;
+            margin-top: 0.1rem;
+        }
+        
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #666;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .print-btn:hover {
+            background: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .certifications-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">Print/Save as PDF</button>
+    
+    <div class="header">
+        <h1>VIPUL KUMAR</h1>
+        <div class="title">SQA Engineer</div>
+        <div class="contact-info">
+            <span>📍 Vaishali, Bihar, India</span>
+            <span>📞 +91 7876789537</span>
+            <span>✉️ krvipul28@gmail.com</span>
+            <span>💼 <a href="https://www.linkedin.com/in/vipul-kumar-8779292a2/">LinkedIn</a></span>
+            <span>🔗 <a href="https://github.com/Vipulhere/">GitHub</a></span>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="section">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                Hybrid QA Engineer with hands-on experience in both manual and automation testing. Skilled in identifying critical bugs across APIs, dashboards, frontend web, mobile apps, and design systems. Proficient with TestNG-based frameworks, API automation, frontend automation for desktop, mobile web, native apps, and visual UI validation. Known for detail-oriented approach and strong ownership in end-to-end quality assurance.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="company">TIKET.COM</div>
+                        <div class="job-title">SQA Engineer</div>
+                    </div>
+                    <div class="duration">Oct 2023 – Present</div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Performed end-to-end manual and automation testing across desktop web, mobile web (mWeb), and native mobile apps</li>
+                    <li>Automated test cases for APIs, frontend components, and regression suites using Java, TestNG, Selenium, and Appium</li>
+                    <li>Validated REST APIs using Postman and REST Assured, including status codes, response schema, and business logic</li>
+                    <li>Implemented visual UI automation to detect layout and content differences across builds</li>
+                    <li>Used tools like Charles Proxy and DevTools for network and console debugging in complex scenarios</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Technical</h4>
+                    <div class="skill-list">Java, SQL, Python, HTML, CSS, JavaScript, Git, Maven, JSON, XPath</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Automation Testing</h4>
+                    <div class="skill-list">Selenium, TestNG, Appium, REST Assured, Postman, Visual Automation, Jenkins</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Manual Testing</h4>
+                    <div class="skill-list">API, UI, Mobile Apps, Cross-browser, Kafka, Kibana, Design System Validation, Regression, Smoke/Sanity</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Utilities</h4>
+                    <div class="skill-list">Charles Proxy, BrowserStack, LambdaTest, DevTools, IntelliJ, Android Studio, Xcode, VS Code, Studio3T, Dbeaver</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Test Management</h4>
+                    <div class="skill-list">JIRA, TestRail, Agile/Scrum Methodologies</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <div class="skill-list">Problem-Solving, Attention to Detail, Communication, Collaboration, Time Management</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Awards & Achievements</h2>
+            <div class="awards-section">
+                <div class="award-item">
+                    <div class="award-header">
+                        <span class="award-icon">🎖️</span>
+                        <div class="award-details">
+                            <div class="award-title">QA Rockstar Award</div>
+                            <div class="award-company">tiket.com – Q1 2024 & Q4 2024</div>
+                        </div>
+                    </div>
+                    <div class="award-description">
+                        Recognized twice for outstanding performance in delivering high-quality software products. Awarded by the leadership team for exemplary contributions in the QA team.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications-section">
+                <h3 class="sub-section-title">📜 Certifications</h3>
+                <ul class="certifications-list">
+                    <li>
+                        <div class="cert-title">Core Java Bootcamp</div>
+                        <div class="cert-provider">Udemy (Jun 2025)</div>
+                        <div class="cert-description">Completed an intensive Java course covering Java 17, object-oriented programming, and backend development fundamentals.</div>
+                    </li>
+                    <li>
+                        <div class="cert-title">Software Engineer Certification</div>
+                        <div class="cert-provider">HackerRank (Dec 2024)</div>
+                        <div class="cert-description">Verified proficiency in Java, SQL, and JavaScript through hands-on coding assessments.</div>
+                    </li>
+                    <li>
+                        <div class="cert-title">JavaScript (Intermediate)</div>
+                        <div class="cert-provider">HackerRank</div>
+                    </li>
+                    <li>
+                        <div class="cert-title">SQL (Advanced)</div>
+                        <div class="cert-provider">HackerRank</div>
+                    </li>
+                    <li>
+                        <div class="cert-title">Software Engineer Intern</div>
+                        <div class="cert-provider">HackerRank</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <div class="university">CHITKARA UNIVERSITY</div>
+                        <div class="degree">B.E in Computer Science</div>
+                    </div>
+                    <div>
+                        <div class="gpa">CGPA: 9.80/10</div>
+                        <div class="duration">2024</div>
+                    </div>
+                </div>
+                <ul class="education-details">
+                    <li>Built multiple projects using C++, Java, and MERN stack</li>
+                    <li>Participated in coding contests, strengthening problem-solving skills</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
